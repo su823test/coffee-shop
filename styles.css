@@ -1,11 +1,11 @@
 :root {
-    --bg-color: #0c0b0a;
-    --bg-secondary: #141210;
-    --text-light: #f5ebe0;
-    --text-muted: #a69c91;
-    --accent-gold: #cca670;
-    --font-heading: 'Cinzel', serif;
-    --font-body: 'DM Sans', sans-serif;
+    --bg-color: #050505;
+    --bg-secondary: #0a0a0a;
+    --text-light: #f5f2eb;
+    --text-muted: #8c8983;
+    --accent-gold: #c2a370;
+    --font-heading: 'Italiana', serif;
+    --font-body: 'Jost', sans-serif;
     --transition: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
