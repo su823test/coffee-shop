@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | Artisanal Coffee</title>
+    <meta name="description" content="Experience the art of artisanal espresso at AURA coffee shop.">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grain-overlay"></div>
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav>
+        <div class="nav-content">
+            <a href="#" class="logo">AURA</a>
+            <div class="nav-links">
+                <a href="#story" class="nav-link">Our Story</a>
+                <a href="#offerings" class="nav-link">Offerings</a>
+                <a href="#visit" class="nav-link">Visit</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg" style="background-image: url('assets/hero.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-up">
+                <span class="word">THE</span>
+                <span class="word">ART</span>
+                <span class="word">OF</span>
+                <br>
+                <span class="word accent">ESPRESSO</span>
+            </h1>
+            <p class="fade-up delay-1">Meticulously crafted, deeply rooted in tradition.</p>
+            <a href="#story" class="btn fade-up delay-2"><span>Discover</span></a>
+        </div>
+        <div class="scroll-indicator fade-up delay-3">
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <section id="story" class="story-section">
+        <div class="story-container">
+            <div class="story-text">
+                <h2 class="reveal-text">A Pursuit of<br><span class="accent">Perfection</span></h2>
+                <div class="divider reveal-fade"></div>
+                <p class="reveal-fade delay-1">Every drop tells a story. We source the finest beans from single-origin farms, roasted small-batch to preserve the delicate notes and profound depth. Our baristas are artisans, transforming the mundane into the extraordinary.</p>
+                <div class="signature reveal-fade delay-2">The Founder</div>
+            </div>
+            <div class="story-image-wrapper reveal-fade">
+                <img src="assets/interior.png" alt="Coffee shop interior" class="story-image parallax-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="offerings" class="offerings-section">
+        <div class="offerings-bg"></div>
+        <div class="offerings-content">
+            <h2 class="reveal-text text-center">Curated<br><span class="accent">Selections</span></h2>
+            <div class="menu-grid">
+                <div class="menu-item reveal-fade">
+                    <div class="menu-heading">
+                        <h3>Noir Espresso</h3>
+                        <span class="price">$4.50</span>
+                    </div>
+                    <p>Dark chocolate, hazelnut, black cherry</p>
+                </div>
+                <div class="menu-item reveal-fade delay-1">
+                    <div class="menu-heading">
+                        <h3>Velvet Cortado</h3>
+                        <span class="price">$5.00</span>
+                    </div>
+                    <p>Equal parts espresso and textured milk</p>
+                </div>
+                <div class="menu-item reveal-fade delay-2">
+                    <div class="menu-heading">
+                        <h3>Golden Pour Over</h3>
+                        <span class="price">$6.50</span>
+                    </div>
+                    <p>Ethiopian Yirgacheffe, jasmine, bergamot</p>
+                </div>
+                <div class="menu-item reveal-fade delay-3">
+                    <div class="menu-heading">
+                        <h3>Signature Latte</h3>
+                        <span class="price">$5.50</span>
+                    </div>
+                    <p>House-made vanilla bean syrup, micro-foam</p>
+                </div>
+            </div>
+        </div>
+        <div class="floating-image-wrapper parallax-img" data-speed="0.15" style="background-image: url('assets/latte.png');"></div>
+    </section>
+
+    <footer id="visit">
+        <div class="footer-content reveal-fade">
+            <div class="footer-col">
+                <div class="logo large">AURA</div>
+                <p>Elevating the daily ritual.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Location</h4>
+                <p>124 Artisan Ave.<br>Metropolis, NY 10012</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hours</h4>
+                <p>Mon - Fri: 7am - 4pm<br>Sat - Sun: 8am - 5pm</p>
+            </div>
+            <div class="footer-col">
+                <h4>Social</h4>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Journal</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AURA Coffee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
