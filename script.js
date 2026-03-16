@@ -88,4 +88,53 @@ document.addEventListener('DOMContentLoaded', () => {
         const heroElements = document.querySelectorAll('.hero .fade-up');
         heroElements.forEach(el => el.classList.add('in-view'));
     }, 100);
+
+    // Mock Google Sign-In
+    const signinBtn = document.getElementById('google-signin-btn');
+    if (signinBtn) {
+        signinBtn.addEventListener('click', () => {
+            signinBtn.innerHTML = 'Connecting...';
+            setTimeout(() => {
+                signinBtn.innerHTML = '<div style="width:20px; height:20px; background:var(--accent-gold); border-radius:50%; display:flex; align-items:center; justify-content:center; color:#000; font-weight:bold; font-size:12px;">M</div> Jane Doe';
+                signinBtn.style.pointerEvents = 'none';
+                signinBtn.style.background = 'transparent';
+            }, 800);
+        });
+    }
+
+    // Mock Google Pay
+    const modal = document.getElementById('gpay-modal');
+    const closeBtn = document.getElementById('close-modal');
+    const confirmBtn = document.getElementById('confirm-pay');
+    const successMsg = document.getElementById('pay-success');
+    const orderTitle = document.getElementById('order-title');
+    const orderPrice = document.getElementById('order-price');
+
+    window.openGPay = (title, price) => {
+        orderTitle.textContent = title;
+        orderPrice.textContent = price;
+        modal.classList.add('active');
+        confirmBtn.style.display = 'block';
+        successMsg.classList.remove('show');
+    };
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+    }
+
+    if (confirmBtn) {
+        confirmBtn.addEventListener('click', () => {
+            confirmBtn.classList.add('loading');
+            setTimeout(() => {
+                confirmBtn.classList.remove('loading');
+                confirmBtn.style.display = 'none';
+                successMsg.classList.add('show');
+                setTimeout(() => {
+                    modal.classList.remove('active');
+                }, 2000);
+            }, 1500);
+        });
+    }
 });

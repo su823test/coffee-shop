@@ -413,6 +413,178 @@ nav.scrolled {
     font-size: 0.95rem;
 }
 
+.menu-item { cursor: pointer; padding: 1rem 1rem 1.5rem 1rem; border-radius: 8px; margin: -1rem; transition: background 0.3s; }
+.menu-item:hover { background: rgba(255,255,255,0.03); }
+
+.price .buy-label {
+    font-size: 0.7rem;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-left: 8px;
+    font-family: var(--font-body);
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.menu-item:hover .buy-label {
+    opacity: 1;
+}
+
+/* ---------------------- Mock API UI Styles ---------------------- */
+
+/* Auth Button */
+.auth-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.05);
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+.auth-btn:hover { background: rgba(255,255,255,0.1); }
+.g-icon {
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s var(--transition);
+}
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+.gpay-sheet {
+    background: #1f1f1f;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 16px;
+    padding: 24px;
+    transform: translateY(50px);
+    transition: transform 0.4s var(--transition);
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.modal-overlay.active .gpay-sheet {
+    transform: translateY(0);
+}
+.gpay-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+#close-modal {
+    background: none; border: none; color: #888; font-size: 28px; cursor: pointer; line-height: 1;
+}
+#close-modal:hover { color: #fff; }
+.gpay-body {
+    margin-bottom: 24px;
+    text-align: center;
+}
+#order-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #e8e8e8;
+    font-family: var(--font-body);
+}
+#order-price {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    font-family: var(--font-body);
+}
+.gpay-card-info {
+    background: #2a2a2a;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #ccc;
+    font-family: var(--font-body);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+.dot { font-size: 0.8em; margin-right: 2px; }
+.gpay-confirm-btn {
+    width: 100%;
+    padding: 16px;
+    border-radius: 24px;
+    border: none;
+    background: #fff;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    font-family: var(--font-body);
+}
+.gpay-confirm-btn:active {
+    transform: scale(0.98);
+}
+.gpay-confirm-btn.loading {
+    background: #333;
+    color: transparent;
+    position: relative;
+    pointer-events: none;
+}
+.gpay-confirm-btn.loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin { 100% { transform: rotate(360deg); } }
+.pay-success-msg {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #4CAF50;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 16px;
+    font-family: var(--font-body);
+}
+.pay-success-msg.show {
+    display: flex;
+}
+.check-icon {
+    width: 24px; height: 24px;
+}
+
 .floating-image-wrapper {
     position: absolute;
     top: 25%;
