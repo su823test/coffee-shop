@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIRUI | Artisanal Coffee</title>
     <meta name="description" content="Experience the art of artisanal espresso at MIRUI coffee shop.">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@300;400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="grain-overlay"></div>
     <div class="custom-cursor"></div>
@@ -52,7 +55,9 @@
             <div class="story-text">
                 <h2 class="reveal-text">A Pursuit of<br><span class="accent">Perfection</span></h2>
                 <div class="divider reveal-fade"></div>
-                <p class="reveal-fade delay-1">Every drop tells a story. We source the finest beans from single-origin farms, roasted small-batch to preserve the delicate notes and profound depth. Our baristas are artisans, transforming the mundane into the extraordinary.</p>
+                <p class="reveal-fade delay-1">Every drop tells a story. We source the finest beans from single-origin
+                    farms, roasted small-batch to preserve the delicate notes and profound depth. Our baristas are
+                    artisans, transforming the mundane into the extraordinary.</p>
                 <div class="signature reveal-fade delay-2">The Founder</div>
             </div>
             <div class="story-image-wrapper reveal-fade">
@@ -96,7 +101,8 @@
                 </div>
             </div>
         </div>
-        <div class="floating-image-wrapper parallax-img" data-speed="0.15" style="background-image: url('assets/latte.png');"></div>
+        <div class="floating-image-wrapper parallax-img" data-speed="0.15"
+            style="background-image: url('assets/latte.png');"></div>
     </section>
 
     <footer id="visit">
@@ -128,26 +134,35 @@
     <div id="gpay-modal" class="modal-overlay">
         <div class="gpay-sheet">
             <div class="gpay-header">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Pay_Logo_%282020%29.svg/2560px-Google_Pay_Logo_%282020%29.svg.png" alt="Google Pay" height="20">
+                <div
+                    style="display: flex; align-items: center; gap: 6px; font-size: 1.2rem; font-weight: 500; letter-spacing: -0.5px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                    <img src="https://developers.google.com/identity/images/g-logo.png" alt="G" height="20"
+                        style="background: white; border-radius: 50%; padding: 2px;"> Pay
+                </div>
                 <button id="close-modal">&times;</button>
             </div>
             <div class="gpay-body">
                 <h3 id="order-title">Noir Espresso</h3>
                 <div class="gpay-price" id="order-price">$4.50</div>
                 <div class="gpay-card-info">
-                    <span><span class="dot">••••</span> <span class="dot">••••</span> <span class="dot">••••</span> 1234</span>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png" alt="Card" height="18" class="card-logo">
+                    <span><span class="dot">••••</span> <span class="dot">••••</span> <span class="dot">••••</span>
+                        1234</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png"
+                        alt="Card" height="18" class="card-logo">
                 </div>
             </div>
             <button id="confirm-pay" class="gpay-confirm-btn">
                 <span>Pay</span>
             </button>
             <div id="pay-success" class="pay-success-msg">
-                <svg viewBox="0 0 24 24" class="check-icon"><path fill="none" stroke="currentColor" stroke-width="2" d="M4,12 L9,17 L20,6"></path></svg> Payment Successful
+                <svg viewBox="0 0 24 24" class="check-icon">
+                    <path fill="none" stroke="currentColor" stroke-width="2" d="M4,12 L9,17 L20,6"></path>
+                </svg> Payment Successful
             </div>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
